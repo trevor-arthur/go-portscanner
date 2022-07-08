@@ -35,3 +35,13 @@ func InitialScan(hostname string) []ScanResult {
 
 	return results
 }
+
+type States []ScanResult
+
+func (states States) CheckOpenPorts() []string {
+	var list []string
+	for _, states := range states {
+		list = append(list, states.State)
+	}
+	return list
+}
