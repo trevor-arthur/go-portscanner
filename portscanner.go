@@ -7,7 +7,7 @@ import (
 )
 
 // Configurations
-var target = "192.168.0.169"
+var target = "localhost"
 var maxPort = 10000
 var protocol = "tcp"
 
