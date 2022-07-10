@@ -7,8 +7,8 @@ import (
 )
 
 // Configurations
-var target = "localhost"
-var maxPort = 10000
+var target = "192.168.0.144"
+var maxPort = 1024
 var protocol = "tcp"
 
 // Worker function
