@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"net"
+	"os"
 	"sort"
+	"strconv"
 )
 
 // Configurations
-var target = "192.168.0.144"
-var maxPort = 1024
+var target = os.Args[1]
+var maxPortString = os.Args[2]
+var maxPort, err = strconv.Atoi(maxPortString)
 var protocol = "tcp"
 
 // Worker function
